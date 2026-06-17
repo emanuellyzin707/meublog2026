@@ -29,16 +29,21 @@
             padding: 16px;             /* Adiciona espaçamento interno de 16 pixels */
         }
        
+        
         /* Estiliza cada bloco de post do blog */
-        article {
-            display: flex;             /* Define o layout flexbox para alinhar os itens (imagem e texto) lado a lado */
-        }
+article {
+    display: flex;             /* Alinha imagem e texto lado a lado */
+    gap: 20px;                 /* CRUCIAL: Cria o espaço de separação entre a imagem e o texto */
+    align-items: center;       /* Alinha verticalmente a imagem e o texto pelo centro */
+    margin-bottom: 24px;       /* Adiciona um espaço entre um post e outro */
+}
 
-
-        /* Estiliza as imagens dos artigos */
-        img {
-            width: 60px;               /* Define a largura fixa de 80 pixels */
-            height: 60px;              /* Define a altura fixa de 80 pixels */
+/* Estiliza as imagens dos artigos */
+img {
+    width: 80px;               /* Define a largura fixa de 80 pixels */
+    height: 80px;              /* Define a altura fixa de 80 pixels */
+    border-radius: 8px;        /* Opcional: deixa os cantos da imagem arredondados e mais modernos */
+    object-fit: cover;         /* Garante que a imagem se ajuste sem distorcer */
         }
 
 
